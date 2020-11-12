@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - NETrun</title>
+    <link rel="shortcut icon" type="image/x-con" href="img/NETrun_favicon.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body>
+<header>
+    <img src="img/NETrun_logo_small.png" alt="NETrun Logo" id="logo">
+    <h1><span>NET</span>run</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="diensten.html">Diensten</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="contact">
+    <section><h2>Contacteren</h2>
+        <p>Om ons te contacteren, gelieve onderstaand formulier in te vullen. We nemen zo snel mogelijk contact op.</p></section>
+    <form>
+        <fieldset>
+            <legend>Contact formulier</legend>
+
+            <label for="achterNaam">Achternaam*</label>
+            <input type="text" id="achterNaam" required>
+
+            <label for="voorNaam">Voornaam*</label>
+            <input type="text" id="voorNaam"  required>
+
+
+            <label for="organisatie">Organisatie</label>
+            <input type="text" id="organisatie" autofocus>
+
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" required>
+
+            <label for="gsm">Mobiele telefoon</label>
+            <input type="tel" id="gsm" placeholder="xxxx xx xx xx" pattern="\d{4} \d{2} \d{2} \d{2}">
+
+            <label for="leeftijd">Leeftijd</label>
+            <input type="number" placeholder="leeftijd" id="leeftijd" min="18" max="67">
+
+
+            <label for="textarea">Uw bericht*</label>
+            <textarea id="textarea" placeholder="Tik hier uw bericht" rows="5" cols="40" required></textarea>
+
+            <input type="submit" value="Send">
+        </fieldset>
+    </form>
+    <section>
+        <h2>Adres</h2>
+        <p><i class="far fa-address-card"></i> Rochusstraat 46, 3118 Werchter</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2512.2713951790415!2d4.698994551481241!3d50.97417397945074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c15eec14dfa439%3A0xcde5c23f79cc2a9d!2sRochusstraat%2046%2C%203118%20Rotselaar!5e0!3m2!1snl!2sbe!4v1576868231253!5m2!1snl!2sbe" width="400" height="300" style="border:0;" allowfullscreen=""></iframe>
+    </section>
+    <section>
+        <h2>Openingsuren</h2>
+        <ul>
+            <li><span>Maandag-Vrijdag: </span>17u tot 22u</li>
+            <li><span>Zaterdag: </span>12u tot 18u</li>
+            <li><span>Zondag: </span>Gesloten</li>
+        </ul>
+    </section>
+
+</main>
+<footer>
+
+
+    <p><i class="fas fa-envelope-open"></i> <a href="mailto:info@netrun.eu">info@netrun.eu</a></p>
+    <address><i class="far fa-address-card"></i> Rochusstraat 46, 3118 Werchter</address>
+    <p><i class="fas fa-mobile-alt"></i> tel: 0468219859</p>
+
+    <a href="https://www.facebook.com/netrun.eu"><img src="img/Facebook_logo.png" alt="Facebook logo"></a>
+    <a href="https://www.twitter.com/wim_juste"><img src="img/Twitter_logo.png" alt="Twitter logo"></a>
+</footer>
+</body>
+</html>

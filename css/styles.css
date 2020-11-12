@@ -1,0 +1,529 @@
+@charset "UTF-8";
+
+html {
+    font-family: "Arial", sans-serif;
+    scroll-behavior: smooth;
+}
+html li{
+    list-style-type: none;
+}
+
+/* HEADER */
+header{
+    background-color: #FFFFFF;
+
+}
+header #logo{
+    float: left;
+    margin: 1rem;
+    width: 20%;
+}
+h1 {
+    font-size: 3.8rem;
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: normal;
+    color: #808088;
+    margin-bottom: 0.5rem;
+}
+h1 span{
+    font-weight: bold;
+    color: black;
+}
+nav {
+    clear: both;
+}
+
+nav ul {
+    display: flex;
+    background-color: #18ba9b;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+nav li{
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+nav li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    padding: 0.7rem;
+
+}
+nav li.active{
+    background-color: #27999c;
+}
+nav li:hover,
+nav li:focus{
+    background-color: #3ccbba;
+    transition: background-color 0.3s;
+}
+
+/* BODY */
+main{
+    font-size: 0.8rem;
+}
+
+
+
+/*----- KNOPPEN ------*/
+main p>a {
+    color: white;
+    font-weight: 700;
+    display: inline-block;
+    background-color: #18ba9b;
+    padding: 0.1rem;
+    border: 1px #27999c solid;
+    border-radius: 3px;
+    text-decoration: none;
+
+}
+main p>a:before{
+    content: '> ';
+}
+/* ---------- */
+
+/*-----BANNER-----*/
+
+.index article{
+    padding: 1rem;
+
+}
+.index article{
+    background: url("../img/banner.png") no-repeat center top fixed;
+    background-size: cover;
+    padding-bottom: 12.5%;
+
+}
+
+.index article img{
+    float: left;
+    width: 100%;
+    padding-bottom: 1rem;
+
+}
+.index article section p{
+    padding-top: 1rem;
+}
+.index article section{
+    color: #FFFFFF;
+    background: rgba(0,0,0,0.6);
+    padding: 0.1rem;
+}
+/*----- KNOP BANNER -----*/
+#knop {
+    display: none;
+    background: none;
+    border-radius: 0;
+}
+
+#knop p{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+#knop a{
+    background: rgba(0,0,0,0.2);
+    border: 0.1rem solid whitesmoke;
+}
+/* ---------- */
+.index ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1rem;
+    margin-bottom: 0;
+    padding-left: 0;
+
+}
+.index li{
+    padding: 0.4rem;
+    background-color: #FFFFFF;
+    position: relative;
+    box-shadow: 10px 10px 20px -5px rgba(0,0,0,1);
+
+}
+.index li h3{
+    text-align: center;
+    color: #000000;
+    border-bottom: 3px solid #18ba9b;
+    margin-bottom: 1rem;
+}
+.index li img{
+    display: block;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+
+.index li p{
+    text-align: right;
+    margin-top: 0.4rem;
+}
+
+.index section{
+    padding: 1rem;
+    clear: both;
+    background-color: #f7f7f7;
+
+}
+/*-----DIENSTEN PAGINA -----*/
+
+.diensten{
+    display: grid;
+    background-color: #FFFFFF;
+    grid-template-columns: 1fr;
+}
+
+.diensten section{
+    margin: 1rem;
+    background-color: #f7f7f7;
+    box-shadow: 10px 10px 20px -5px rgba(0,0,0,1);
+}
+
+.diensten section img{
+    width: 80%;
+    display: block;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.diensten section h2{
+    text-align: center;
+}
+.diensten section p{
+    padding: 0.5rem;
+}
+.diensten ul li {
+
+    list-style-type: disc;
+}
+
+/*-----PORTFOLIO PAGINA -----*/
+
+.portfolio article{
+    background-color: whitesmoke;
+    margin: 1rem;
+    box-shadow: 10px 10px 20px -5px rgba(0,0,0,1);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2rem 20% 1fr;
+    padding: 0.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.portfolio h2{
+    padding: 0.2rem;
+
+}
+.portfolio>section{
+    background-color: #f7f7f7;
+}
+.portfolio article img{
+    padding: 0.5rem;
+    margin-top: 0;
+    width: 100%;
+    grid-row: 2 / span 3;
+}
+.portfolio article p{
+
+    margin: 0;
+}
+
+.portfolio ul{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 0.5rem;
+    margin: 0;
+}
+.portfolio ul li{
+    background-color: white;
+    box-shadow: 10px 10px 20px -5px rgba(0,0,0,1);
+    padding: 0.2rem 0.5rem;
+}
+.portfolio li h3{
+
+}
+
+.portfolio li img{
+    width: 100%;
+}
+.portfolio li p{
+    padding-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/*------CONTACT PAGINA ------*/
+
+.contact form {
+
+    margin: 0 auto;
+    padding: 0.4em;
+}
+.contact fieldset{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0.2rem;
+    grid-row-gap: 0.6rem;
+}
+
+.contact legend{
+    font-size: 120%;
+    font-weight:bold;
+    grid-column: 1/3;
+
+}
+.contact label{
+    font-size: 1rem;
+}
+.contact input{
+    font-size: 1rem;
+    border-radius: 1px;
+}
+.contact form fieldset :last-child{
+    color: #FFFFFF;
+    background-color: #27999c;
+    border: none;
+
+}
+
+.contact>:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+.contact>:nth-child(even) {
+    background-color: #f7f7f7;
+}
+.contact section{
+    padding: 1rem;
+    border-bottom: solid 1px lightgrey;
+}
+.contact iframe{
+    width: 100%;
+}
+/* FOOTER */
+
+footer{
+    clear: both;
+    background-color: #18ba9b;
+    color: #FFFFFF;
+    overflow: hidden;
+    padding: 1rem;
+}
+footer img{
+    margin: 0.1rem;
+    float: right;
+    width: 3rem;
+}
+footer *{
+    font-size: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer section>*{
+    background-color: #18ba9b;
+
+}
+
+
+
+
+@media all and (min-width: 24rem){
+    nav li {
+        height: 65px;
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 4.2rem;
+    }
+}
+
+
+
+
+
+@media all and (min-width: 36rem){
+    /* HEADER */
+    nav ul {
+        flex-wrap: nowrap;
+    }
+    nav li {
+        width: 25%;
+        height: auto;
+    }
+    nav li.active{
+        background-color: #27999c;
+    }
+    nav li:hover,
+    nav li:focus{
+        background-color: #3ccbba;
+        border-bottom-color: #3ccbba;
+        transition: background-color 0.3s, border-bottom-color 0.3s;
+
+    }
+    header #logo{
+             float: none;
+             position: absolute;
+             width: 100px;
+    }
+    /* MAIN */
+    .index article{
+        background-position: center top;
+        background-size: cover;
+    }
+
+    .index article h2{
+        text-align: start;
+    }
+    .index article img{
+        width: 25%;
+        padding-right: 1rem;
+    }
+    .index article img{
+        width: 25%;
+        padding-right: 1rem;
+    }
+    .index ul{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 0;
+        grid-column-gap: 1rem;
+    }
+    .index li img{
+        height: auto;
+    }
+    .diensten section img {
+        float: right;
+        width: 30%;
+        padding: 1rem;
+    }
+    .diensten section {
+        clear: both;
+    }
+    .diensten section ul{
+        padding-bottom: 0;
+    }
+    .diensten section p>a{
+        font-size: 1rem;
+    }
+
+    .portfolio article{
+        background-color: whitesmoke;
+        box-shadow: 10px 10px 20px -5px rgba(0,0,0,1);
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 2rem 1fr;
+
+    }
+
+    .portfolio article h2{
+        padding: 0.2rem;
+        grid-column: 1 / end;
+    }
+
+    .portfolio article img{
+        padding: 0.5rem;
+        margin-top: 0;
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 3;
+    }
+    .portfolio article p{
+        grid-column: 2 / span 4;
+        margin: 0;
+    }
+    .portfolio ul{
+
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .contact fieldset{
+        grid-template-columns: 1fr 3fr;
+    }
+    .contact legend{
+        grid-column: 1/3;
+    }
+    .contact fieldset :last-child{
+        grid-column: 2/3;
+    }
+    .contact {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact :first-child{
+        grid-column: 1/3;
+
+    }
+    .contact :nth-child(3){
+        background-color: #f7f7f7;
+    }
+    .contact form{
+        grid-row: 2/4;
+        width: 100%;
+    }
+    .contact span{
+        font-weight: bold;
+    }
+
+}
+
+@media all and (min-width: 60rem) {
+    main {
+        font-size: 1.1rem;
+    }
+}
+@media all and (min-width: 79.5rem){
+
+    .index article section{
+        width: 90%;
+        margin: 1rem auto;
+    }
+    #knop{
+        display: block;
+    }
+    .diensten {
+        width: 90%;
+        margin: auto;
+    }
+    .portfolio ul{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .portfolio article{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+@media all and (min-width: 90rem){
+
+    .index article section{
+        width: 80%;
+    }
+    .index section ul,#Diensten h2{
+        width: 80%;
+        margin: auto;
+    }
+    .diensten {
+        width: 80%;
+
+    }
+}
+
+
+
+
+
+
+
+
